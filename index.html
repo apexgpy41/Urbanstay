@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UrbanStay</title>
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body> 
+    <div class="cursor"></div>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo"> <img id="logo-img" src="assets/ueban-stayLogo.png" alt=""> <p>UrbanStay </p></a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About</a></li>
+                <li><a href="listing.html">List Property</a></li>
+                <li><a href="regi.html">Sign In</a></li>
+              
+               
+                <li class="account-item">
+                    <a href="account.html" class="account-link">
+                        <i class="fas fa-user-circle"></i>
+                        
+                    </a>
+                    <div class="account-dropdown">
+                        <a href="account.html#profile">My Profile</a>
+                        <a href="bookings.html">My Bookings</a>
+                        <a href="mylistedrooms.html">My Listed rooms</a>
+                        <a href="setting.html">Settings</a>
+                        <a href="#" class="logout-link">Logout</a>
+                        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                        <i class="fas fa-sun"></i>
+                            <i class="fas fa-moon"></i>
+                            <i class="fas fa-tint"></i>
+                        </button>
+                    </div>
+                </li>
+            </ul>
+          
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+          
+            
+        </div>
+    </nav>
+    
+        <div class="hero animate__animated animate__fadeIn">
+            <div class="hero-img" >
+              
+            <h1 id="he1" >Propertys for <category>rent</category> in <city>kolhapur</city></h1>
+            <select class="city-select1" id="citySelect1">
+                  <option value="kolhapur">Kolhapur</option>
+                <option value="mumbai">Mumbai</option>
+                   <!-- <option value="delhi">Delhi</option>
+                <option value="bangalore">Bangalore</option>
+                    <option value="kolkata">Kolkata</option>
+                <option value="chennai">Chennai</option>
+                    <option value="hyderabad">Hyderabad</option>
+                <option value="pune">Pune</option>
+                  <option value="ahmedabad">Ahmedabad</option> -->
+              <!-- Add more cities as needed -->
+            </select>
+            <div id="search-wrap">
+             
+                <div class="search-cot">
+                    
+                    <select class="city-select" id="citySelect">
+                        <option value="kolhapur">Kolhapur</option>
+                        <option value="pune">Pune</option>
+                             <option value="mumbai">Mumbai</option>
+                           
+                        <!-- <option value="delhi">Delhi</option>
+                             <option value="bangalore">Bangalore</option>
+                        <option value="kolkata">Kolkata</option>
+                             <option value="chennai">Chennai</option>
+                        <option value="hyderabad">Hyderabad</option>
+                            
+                     <option value="ahmedabad">Ahmedabad</option> -->
+                       
+                         <!-- Add more cities as needed -->
+                      </select>
+                    <input type="text" 
+                           class="search-box" 
+                           id="searchInput"
+                           placeholder="Search for a neighborhood, or address"
+                           pattern="[A-Za-z0-9\s,.-]+"
+                           minlength="3"
+                           maxlength="50"
+                           title="Please enter a valid address using letters, numbers, spaces and common punctuation"
+                           required>
+                       <button id="searchbutton" ><a href="searched_rooms.html">Search</a></button>
+                       
+                </div>
+                <div id="suggestions"></div>
+                <div id="br-opt">
+                    <div class="br" id="br-opt-1"><a href="#">Rent</a></div>
+                    
+                    </div>
+                    
+            </div>
+
+            
+           
+            </div>
+
+        </div>
+        
+        <div  id="page-2" >
+            <div id="text-p2">
+                <p>80% of peoples spend over 2 weeks searching for <br> rental rooms.stop wasting time and <br> money </p>
+            </div>
+            <div id="emoji">
+                    <div class="emj-div">
+                    😫
+                   <P>Endless Property visits with no <br>success</P>
+                    </div>
+                            <div class="arrw"class="animate__animated animate__slideInLeft">
+                                <img src="assets/icons8-arrow-64.png" alt="">
+                            </div>
+                     <div class="emj-div">
+                        💸
+                       <p>Wasting money and time on broker<br> fees</p>
+                     </div>
+                            <div class="arrw">
+                                <img src="assets/icons8-arrow-64.png" alt=""> 
+                                
+                            </div>
+                    <div class="emj-div">
+                        😤
+                       <p>But still did't find any <br>rooms</p>
+                    </div>
+            </div>
+            <p style="font-size: 1.2rem; color: rgba(117, 120, 120, 0.999); " ><img  style="rotate: -90deg;  margin-top: 10vh;  " src="assets/icons8-arrow-24.png" alt="" srcset=""> there is another easier way</p>
+            <div id="text-p2" style="margin-top: 13vh;">
+                <p  >Your New Home In 4 Simple Steps </p>
+            </div>
+          
+       
+            </div>
+            <div id="xx">
+                <div id="steps" >
+                    <div class="step animate__animated animate__slideInRight">
+                        <img src="assets/1.png" alt="">
+                      <div class="td">  <p style="color:rgba(0, 0, 0, 0.999)  ; font-size: 1rem; font-weight: 700;" >Create Your Profile </p><p style="color:rgba(117, 120, 120, 0.999)  ; font-size: 0.9rem; font-weight: 700;" >Sign up in minutes and tell us what you're looking for</p></div>
+                    </div>
+                    <div class="step animate__animated animate__slideInLeft">
+                        <img src="assets/2.png" alt="">
+                        <div class="td" ><p  style="color:rgba(0, 0, 0, 0.999)  ; font-size: 1rem; font-weight: 700;">Browse Verified Listings</p><p style="color:rgba(117, 120, 120, 0.999)  ; font-size: 0.9rem;font-weight: 700" >Use smart filters to find properties matching your criteria</p></div>
+                    </div>
+                    <div class="step animate__animated animate__slideInRight">
+                        <img src="assets/3.png" alt="">
+                        <div class="td"> <p  style="color:rgba(0, 0, 0, 0.999)  ; font-size: 1rem; font-weight: 700;">Take Virtual Tours </p><p style="color:rgba(117, 120, 120, 0.999)  ; font-size: 0.9rem;font-weight: 700" >View properties remotely and shortlist your favorites</p></div>
+                    </div>
+                    <div class="step animate__animated animate__slideInLeft">
+                        <img src="assets/4.png" alt="">
+                        <div class="td"><p  style="color:rgba(0, 0, 0, 0.999)  ; font-size: 1rem; font-weight: 700;">Connect And Move </p><p style="color:rgba(117, 120, 120, 0.999)  ; font-size: 0.9rem;font-weight: 700" >Messege owners directly and secure your new home</p></div>
+                    </div>
+                </div>
+            </div>
+            <div id="page3">
+              <div id="p31">
+<h1>Everything You Need For A Stress Free Room Search </h1>
+<p> A powerful tools for to help you find and secure your ideal room quickly</p>
+              </div> 
+               
+        <div id="p32">
+                             <div class="p32row">
+                                    <div class="p32col">
+                                    <img src="assets/search1.png" alt="">   
+                                        <div class="tag"> <p1>Smart search</p1>
+                                        <p>Find your ideal room in minutes with powerful search filters for location, budget,amenities and more</p>
+                                        </div>
+                                    </div>
+                                    <div class="p32col">
+                                       <img src="assets/icons8-verification-50.png" alt="">   
+                                        <div> <p1>Verified Listings</p1>
+                                        <p>Find properties that are verified and personally visited by our team</p>
+                                        </div>
+                                    </div>
+                                    <div class="p32col">
+                                       <img src="assets/icons8-navigation-50.png" alt="">
+                                        <div> <p1>Easy Navigation</p1>
+                                        <p>Effortless navigation to selected room whith the help of integrated google map </p>
+                                        </div>
+                                    </div>
+
+                             </div>
+                             <div class="p32row">
+                                <div class="p32col">
+                                    <img src="assets/icons8-virtual-reality-50.png" alt=""> 
+                                    <div> <p1>Virtual Tours</p1>
+                                    <p>Take virtual property tours from anywhere with the help of advanced 3d view  </p>
+                                    </div>
+                                </div>
+                                <div class="p32col">
+                                    <img src="assets/icons8-filter-50.png" alt="">
+                                    <div> <p1>Easy Filtaration</p1>
+                                    <p>Filter searched properties Easyly by price, location, amenities, size, capacity and many more! </p>
+                                    </div>
+                                </div>
+                                <div class="p32col">
+                                   <img src="assets/icons8-home-50.png" alt=""> 
+                                    <div> <p1>List your property</p1>
+                                    <p>If you are property owner List your property in 3 easy steps UrbanStay will help you to manage your property </p>
+                                    </div>
+                                </div>
+
+                             </div>
+
+        
+</div>
+</div>
+<div id="page4">
+    <div id="p41"><h1>Have a property to sell in <city-1>kolhapur</city-1>?</h1>
+        <div id="sell-box">
+            <h2>List your property and connect with clients faster!</h2>
+            <a href="listing.html" style="text-decoration: none; color: black;"><div id="button">List your property</div></a> 
+        </div>
+    </div>
+   
+</div>
+<div id="page5">
+    <div class="reviews-container">
+        <div class="reviews-header">
+            <h2>What Our Customers Say</h2>
+            <p>Real experiences from our valued users</p>
+        </div>
+        
+        <div class="reviews-grid">
+            <div class="review-card">
+                <div class="review-profile">
+                    <img src="assets/pro5.jpeg" alt="Agent's profile picture" alt="User Profile">
+                    <div class="review-info">
+                        <h4>Sarah Johnson</h4>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p>"Found my perfect apartment in just 3 days! The virtual tours saved me so much time. Highly recommend UrbanStay!"</p>
+            </div>
+
+            <div class="review-card">
+                <div class="review-profile">
+                    <img src="assets/pro3.jpg" alt="Agent's profile picture" alt="User Profile">
+                    <div class="review-info">
+                        <h4>Michael Chen</h4>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p>"The verification system gave me peace of mind. No more dealing with fake listings or unreliable brokers."</p>
+            </div>
+
+            <div class="review-card">
+                <div class="review-profile">
+                    <img src="assets/pro2.jpg" alt="Agent's profile picture" alt="User Profile">
+                    <div class="review-info">
+                        <h4>raj Patel</h4>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p>"As a property owner, listing on UrbanStay was the best decision. The platform is user-friendly and brings quality tenants."</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About UrbanStay</h3>
+                <p>UrbanStay is your go-to platform for finding and securing your ideal room quickly and efficiently.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="aboutus.html">About</a></li>
+                    <li><a href="listing.html">List Property</a></li>
+                    <li><a href="login.html">Sign In</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: support@urbanstay.com</p>
+                <p>Phone: +123 456 7890</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 UrbanStay. All rights reserved.</p>
+        </div>
+    </footer>
+
+       
+
+             <script src="js/cursor.js"></script>
+    <script src="js/auth.js" type="module"></script>
+      <script src="script.js" type="module"></script>
+         <script src="js/animations.js"></script>  
+</body>
+</html>
